@@ -67,6 +67,10 @@ export interface TextComponentProps extends CommonComponentProps {
 
 export declare type AllComponentProps = TextComponentProps & ImageComponentProps
 
+export interface ShapeComponentProps extends CommonComponentProps {
+  backgroundColor: string
+}
+
 export const textDefaultProps: TextComponentProps = {
   // basic props - font styles
   text: '正文内容',
@@ -90,6 +94,12 @@ export const imageDefaultProps: ImageComponentProps = {
   src: 'test.url',
   ...commonDefaultProps
 }
+
+export const shapeDefaultProps: ShapeComponentProps = {
+  backgroundColor: '',
+  ...commonDefaultProps
+}
+
 // 用在组件上的样式名称
 export const textStylePropNames = without(
   Object.keys(textDefaultProps),
@@ -100,6 +110,11 @@ export const textStylePropNames = without(
 export const imageStylePropsNames = without(
   Object.keys(imageDefaultProps),
   'src'
+)
+export const shapeStylePropsNames = without(
+  Object.keys(imageDefaultProps),
+  'actionType',
+  'url'
 )
 // 防止编辑中点击事件不要被触发
 export const isEditingProp = {

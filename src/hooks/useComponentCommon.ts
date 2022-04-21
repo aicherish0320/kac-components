@@ -1,10 +1,8 @@
-import { TextComponentProps } from '@/defaultProps'
-import { pick } from 'lodash-es'
 import { computed } from 'vue'
-
-// 使用范型将 props 类型流动到函数中，使得函数返回值可以得到类型
+import { pick } from 'lodash-es'
+import { CommonComponentProps } from '@/defaultProps'
 const useComponentCommon = (
-  props: Readonly<Partial<TextComponentProps>>,
+  props: Readonly<Partial<CommonComponentProps & { isEditing: boolean }>>,
   picks: string[]
 ) => {
   const styleProps = computed(() => pick(props, picks))
@@ -13,7 +11,6 @@ const useComponentCommon = (
       window.location.href = props.url
     }
   }
-
   return {
     styleProps,
     handleClick

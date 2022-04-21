@@ -1,6 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import KacComponents from './index'
 
-import TestPlugin from './test.plugin'
+const app = createApp(App)
 
-createApp(App).use(TestPlugin).mount('#app')
+app.use(KacComponents)
+app.mount('#app')
