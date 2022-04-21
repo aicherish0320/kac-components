@@ -1,10 +1,19 @@
-<template>Hello</template>
+<template>
+  <HelloComp />
+</template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, getCurrentInstance, onMounted } from 'vue'
 
 export default defineComponent({
-  name: 'App'
+  name: 'App',
+  setup() {
+    onMounted(() => {
+      const $echo =
+        getCurrentInstance()?.appContext.config.globalProperties.$echo
+      $echo()
+    })
+  }
 })
 </script>
 
