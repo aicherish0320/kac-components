@@ -8,7 +8,7 @@ const file = (type) => `dist/${name}.${type}.js`
 
 const override = {
   compilerOptions: { declaration: true },
-  exclude: ['src/main.ts', 'src/App.vue', 'src/main.ts']
+  exclude: ['src/main.ts', 'src/App.vue', 'tests/**/*.ts', 'tests/**/*.tsx']
 }
 
 export default {
