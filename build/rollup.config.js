@@ -1,4 +1,4 @@
-import { name } from './package.json'
+import { name } from '../package.json'
 import css from 'rollup-plugin-css-only'
 import vue from 'rollup-plugin-vue'
 import typescript from 'rollup-plugin-typescript2'
@@ -26,3 +26,5 @@ export default {
   ],
   external: ['vue', 'lodash-es'] // 哪些是外部依赖
 }
+
+export { name, file }
