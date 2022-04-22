@@ -23,5 +23,6 @@ export default {
     vue(),
     css({ output: 'bundle.css' }),
     nodeResolve()
-  ]
+  ],
+  external: ['vue', 'lodash-es'] // 哪些是外部依赖
 }
