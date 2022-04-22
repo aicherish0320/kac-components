@@ -28,3 +28,8 @@ app.use(KaText)
   - 单元测试、语法转换、lint 工具、程序构建、本地开发等等
 - peerDependencies
   - 需要核心依赖库，不能脱离依赖库单独使用（库在使用过程中必须要使用的依赖，没安装的话，会提示警告）
+
+### package.json
+
+- main -> umd
+- module -> esm
