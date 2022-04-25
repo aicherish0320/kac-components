@@ -10,12 +10,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "npm run clean & npm run build:esm & npm run build:umd",
-    "test:unit": "vue-cli-service test:unit",
+    "test": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "build:esm": "rollup --config build/rollup.esm.config.js",
     "build:umd": "rollup --config build/rollup.umd.config.js",
     "clean": "rimraf ./dist",
-    "prepublishOnly": "npm run lint && npm run test:unit && npm run build",
+    "prepublishOnly": "npm run lint && npm run test && npm run build",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -66,7 +66,7 @@
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": [
       "npm run lint",
-      "npm run test:unit"
+      "npm run test"
     ]
   }
 }
