@@ -41,8 +41,7 @@ describe('KaText.vue', () => {
     const props = {
       ...textDefaultProps,
       actionType: 'url',
-      url: 'http://www.baidu.com',
-      tag: 'h2'
+      url: 'http://www.baidu.com'
     }
     const wrapper = shallowMount(KaText, {
       props
