@@ -2,7 +2,7 @@ import KaText from '@/components/ka-text/KaText.vue'
 import { textDefaultProps } from '@/defaultProps'
 import { shallowMount } from '@vue/test-utils'
 
-describe('KaText.vue', () => {
+describe('KaText.vue component', () => {
   const location = window.location
   beforeEach(() => {
     Object.defineProperty(window, 'location', {
