@@ -1,10 +1,10 @@
 {
   "name": "kac-components",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "main": "dist/kac-components.umd.js",
   "module": "dist/kac-components.esm.js",
-  "types": "dist/src/index.d.ts",
+  "types": "dist/index.d.ts",
   "license": "MIT",
   "author": "aicherish",
   "scripts": {
