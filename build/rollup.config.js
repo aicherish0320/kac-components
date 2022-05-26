@@ -24,7 +24,7 @@ export default {
     css({ output: 'bundle.css' }),
     nodeResolve()
   ],
-  external: ['vue', 'lodash-es'] // 哪些是外部依赖
+  external: ['vue'] // 哪些是外部依赖
 }
 
 export { name, file }
