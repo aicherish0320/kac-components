@@ -10,7 +10,7 @@
 import { defineComponent, PropType } from 'vue'
 import { ComponentData, PageData } from '../../defaultProps'
 export default defineComponent({
-  name: 'final-page',
+  name: 'FinalPage',
   props: {
     page: {
       type: Object as PropType<PageData>

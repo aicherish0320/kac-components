@@ -24,7 +24,7 @@ const install = (app: App) => {
   })
 }
 
-export { KaText, KaImage, KaShape, FinalPage }
+export { install, KaText, KaImage, KaShape, FinalPage }
 
 export default {
   install

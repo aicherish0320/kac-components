@@ -19,7 +19,7 @@ describe('KaText.vue component', () => {
     })
   })
   it('default KaText render', () => {
-    const text = 'Hello'
+    const text = 'HelloWorld'
     const props = {
       ...textDefaultProps,
       text
