@@ -1,6 +1,7 @@
 import KaText from './components/ka-text'
 import KaImage from './components/ka-image'
 import KaShape from './components/ka-shape'
+import FinalPage from './components/final-page'
 import { App } from 'vue'
 export {
   textDefaultProps,
@@ -15,7 +16,7 @@ export {
   AllComponentProps
 } from './defaultProps'
 
-const components = [KaText, KaImage, KaShape]
+const components = [KaText, KaImage, KaShape, FinalPage]
 
 const install = (app: App) => {
   components.forEach((comp) => {
@@ -23,7 +24,7 @@ const install = (app: App) => {
   })
 }
 
-export { KaText, KaImage, KaShape, install }
+export { KaText, KaImage, KaShape, FinalPage }
 
 export default {
   install

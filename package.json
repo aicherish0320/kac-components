@@ -1,6 +1,6 @@
 {
   "name": "kac-components",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": false,
   "main": "dist/kac-components.umd.js",
   "module": "dist/kac-components.esm.js",
